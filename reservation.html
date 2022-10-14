@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#home" class="logo"><i class="fas fa-utensils"></i>  Crispy Kitchen</a>
+
+    <div id="menu-bar"></div>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="index.html">menu</a>
+        <a href="index.html">popular</a>
+        <a href="index.html">gallery</a>
+        <a href="index.html">review</a>
+        <a href="reservation.html">Reservation</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>the secrete ingredient is always love</h3>
+        <p>"We prioritize what you need to get you on your way. We strive to keep you at your best, and we remain loyal to you, your tastes and your time. We value teamwork, honesty, community involvement, dedication to the culinary arts, and transparency."</p>
+    </div>
+
+    <div class="image">
+        <img src="images/home-img.png" alt="">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+<!-- reservation section starts  -->
+
+<section class="reservation" id="reservation">
+
+    <h1 class="heading"> <span>Reservation</span></h1>
+
+    <div class="row">
+        
+        <div class="image">
+            <img src="images/reservation.jpg" alt="">
+        </div>
+
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+
+            <div class="inputBox">
+                <input type="number" placeholder="Number of people">
+                <input type="text" placeholder="Phone Number">
+            </div>
+
+            <div class="inputBox">
+                <input type="date" placeholder="Date">
+                <input type="time" placeholder="Time">
+            </div>
+
+            <textarea placeholder="Suggestions" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Book a Table" class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- reservation section ends -->
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+    </div>
+
+    <h1 class="credit"> created by <span> Abhidnya & Prathamesh </span> | all rights reserved! </h1>
+
+</section>
+
+</body>
+</html>

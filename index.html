@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crispy Kitchen</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#home" class="logo"><i class="fas fa-utensils"></i>  Crispy Kitchen</a>
+
+    <div id="menu-bar"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#menu">menu</a>
+        <a href="#popular">popular</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="reservation.html">Reservation</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>the secrete ingredient is always love</h3>
+        <p>"We prioritize what you need to get you on your way. We strive to keep you at your best, and we remain loyal to you, your tastes and your time. We value teamwork, honesty, community involvement, dedication to the culinary arts, and transparency."</p>
+    </div>
+
+    <div class="image">
+        <img src="images/home-img.png" alt="">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> our <span>menu</span> </h1>
+
+    <div class="box-container">
+
+<!-- Trigger the Modal -->
+<img id="myImg" src="images/breakfast.jpg" alt="" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<!-- Trigger the Modal -->
+<img id="myImg" src="images/Lunch.jpg" alt="" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+
+<!-- Trigger the Modal -->
+<img id="myImg" src="images/Dinner.jpg" alt="" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- popular section starts  -->
+
+<section class="popular" id="popular">
+
+    <h1 class="heading"> most <span>popular</span> foods </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/p-1.jpg" alt="">
+            <h3>burger</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            
+        </div>
+        <div class="box">
+            <img src="images/p-2.jpg" alt="">
+            <h3>cakes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            
+        </div>
+        <div class="box">
+            <img src="images/p-3.jpg" alt="">
+            <h3>pizza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+           
+        </div>
+        <div class="box">
+            <img src="images/p-4.jpg" alt="">
+            <h3>cupcakes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            
+        </div>
+        <div class="box">
+            <img src="images/p-5.jpg" alt="">
+            <h3>cold drinks</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+       
+        </div>
+        <div class="box">
+            <img src="images/p-6.jpg" alt="">
+            <h3>ice-cream</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- popular section ends -->
+
+<!-- Slideshow container -->
+ 
+
+
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading"> our <span> gallery </span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/g-1.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="images/g-3.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="images/g-7.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="images/g-8.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="images/g-9.jpg" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> our customers <span>reviews</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/Testimonials-1.jpg" alt="">
+            <h3>Sawani</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>A couple of recent visits and I'm already a fan of their service , food taste and quality.
+                The startes, plating, portion size, dips and accompaniments along are very well designed. During a recent visit we had spring rolls, dragon chicken, sizzlers, burnt garlic rice etc and everything served was quick yet fresh and tasty.</p>
+        </div>
+        <div class="box">
+            <img src="images/Testimonials-2.jpg" alt="">
+            <h3>Aditya</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>The ambience was too good, service was great for making our party a success with the treatment. Food was excellent the garlic Naan was yum and hot. Overall I rate 4 out of 5. A decent indoor seating for families and fun outdoor seating when with friends could be opted for.
+                They do have a Dance floor on 1st floor but I guess it's only accessible for private bookings.</p>
+        </div>
+        <div class="box">
+            <img src="images/Testimonials-3.jpg" alt="">
+            <h3>Ishwari</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Nice restaurant located on Ravet BRT road
+                Ambiance is nice, Soup taste good.
+                Nice seating arrangements indoors and outdoor also.
+                Good offer on drinks are available.Evening nice place to seat and have drinks with friends and family.
+                Food taste great, service is good , staff is also good</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+    </div>
+
+    <h1 class="credit"> created by <span> Prathamesh & Abhidnya </span> | all rights reserved! </h1>
+
+</section>
+
+</body>
+</html>
